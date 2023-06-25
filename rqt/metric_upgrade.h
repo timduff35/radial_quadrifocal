@@ -2,6 +2,7 @@
 #define RQT_METRIC_UPGRADE_H_
 
 #include <Eigen/Dense>
+#include <vector>
 
 namespace rqt {
 

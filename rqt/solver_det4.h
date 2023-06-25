@@ -2,6 +2,7 @@
 #define RQT_SOLVER_DET4
 
 #include <Eigen/Dense>
+#include <vector>
 
 namespace rqt {
 

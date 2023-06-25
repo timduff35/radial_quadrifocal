@@ -2,6 +2,7 @@
 #define RQT_FILTER_CHEIRALITY_U_
 
 #include <Eigen/Dense>
+#include <vector>
 
 namespace rqt {
 
