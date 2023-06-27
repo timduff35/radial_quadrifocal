@@ -31,6 +31,10 @@ add_subdirectory(pybind)
 # Compilation options
 if(MSVC)
 	target_compile_options(${LIBRARY_NAME} PRIVATE /bigobj /fp:fast)
+elseif(APPLE)
+	target_compile_options(${LIBRARY_NAME} PRIVATE
+		-Wall -Wno-sign-compare -Wno-unused-variable -fPIC)
+        
 else()
 	target_compile_options(${LIBRARY_NAME} PRIVATE
 		-march=native -Wall -Wno-sign-compare -Wno-unused-variable -fPIC)
